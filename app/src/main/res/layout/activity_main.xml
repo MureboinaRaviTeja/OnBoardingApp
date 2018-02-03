@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/main_background"
+    tools:context="com.example.mravi.onboardingapp.MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+  android:layout_alignParentBottom="true"
+android:background="@drawable/main_background"
+    android:id="@+id/dots_layout1"
+
+    >
+
+    <LinearLayout
+android:background="@drawable/main_background"
+        android:id="@+id/dots_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+android:layout_marginLeft="150dp"
+
+
+        >
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="Back"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prevBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Next"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorWhite"
+        />
+
+</RelativeLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:background="@drawable/main_background"
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/dots_layout1">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
